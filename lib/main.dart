@@ -145,7 +145,7 @@ class EmployeeDataSource extends DataGridSource {
     return DataGridRowAdapter(
         cells: row.getCells().map<Widget>((e) {
       return Tooltip(
-        message: 'Employee ${row.getCells()[1].value} Data',
+        message: '${e.value}',
         child: Container(
           alignment: Alignment.center,
           padding: const EdgeInsets.all(8.0),
